@@ -14,6 +14,7 @@ bash sn10.sh
 
 ## Notes
 It is recommended for the purposes of this script to leave the generated wallet names as "default".
+You will need to manually write down the private keys as trying to copy them will cancel the scrtip.
 Always back up your private keys in a safe and secure location!
 
 ## Prerequisites
