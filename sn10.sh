@@ -69,14 +69,14 @@ exit 1
 fi
 
 # BACKUP YOUR PRIVATE KEYS OUTSIDE THE SERVER!!!!
-read -p "Back up the private keys displayed above? (y/n): " answer
-if [[ $answer != "y" ]]; then
-    echo "Always ensure you have backed up your PRIVATE KEYS somewhere secure!"
+read -p "Did YOU back up the private keys displayed above? (y/n): " answer
 
-else 
-echo "User declined the step. Exiting the script."
-exit 1
-
+if [[ $answer == "y" ]]; then
+    echo "You are responsible for your private keys! Continuing with the script..."
+    # The script will continue to the next steps here
+else
+    echo "User declined the step or did not confirm the backup. Exiting the script."
+    exit 1
 fi
 
 # Fund your cold wallet with enough TAO to cover Recycling (Registration Fee)
