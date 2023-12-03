@@ -32,7 +32,7 @@ exit 1
 fi
 
 # Generate miner coldkey wallet (coldkey)
-read -p "Generate coldkey? (y/n): " answer
+read -p "Generate coldkey? Recommendation is to leave the name as default (y/n): " answer
 if [[ $answer == "y" ]]; then
     btcli w new_coldkey
 
@@ -43,7 +43,7 @@ exit 1
 fi
 
 # Generate miner coldkey wallet (coldkey)
-read -p "Generate hotkey? (y/n): " answer
+read -p "Generate hotkey? Recommendation is to leave the name as default (y/n): " answer
 if [[ $answer == "y" ]]; then
     btcli w new_hotkey
 
