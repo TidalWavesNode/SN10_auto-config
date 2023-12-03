@@ -1,0 +1,1 @@
+# SN10_auto-config
