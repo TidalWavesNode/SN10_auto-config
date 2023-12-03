@@ -26,7 +26,7 @@ Network bandwidth: 1Gbps
 RAM: 10GB
 
 
-Recommended hardware requirement:
+### Recommended hardware requirement:
 
 Network bandwidth: 10Gbps
 
