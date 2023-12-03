@@ -70,8 +70,8 @@ fi
 
 # BACKUP YOUR PRIVATE KEYS OUTSIDE THE SERVER!!!!
 read -p "Have you backed up your private keys? (y/n): " answer
-if [[ $answer != "n" ]]; then
-    echo "Please back up your private keys before proceeding."
+if [[ $answer != "y" ]]; then
+    echo "Always ensure you have backed up your PRIVATE KEYS!"
     exit 1
 fi
 
