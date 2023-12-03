@@ -24,7 +24,7 @@ fi
 # Build rust binary
 read -p "Build rust binary? (y/n): " answer
 if [[ $answer == "y" ]]; then
-    cd neurons/generate_db || exit
+    cd ~/map-reduce-subnet/neurons || exit
     sudo apt install rustc -y
     sudo apt install cargo -y
     sudo apt-get install libsqlite3-dev -y
