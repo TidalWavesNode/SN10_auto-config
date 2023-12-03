@@ -46,10 +46,20 @@ exit 1
 
 fi
 
-# Generate miner wallets (coldkey/hotkey)
-read -p "Generate coldkey/hotkey? (y/n): " answer
+# Generate miner coldkey wallet (coldkey)
+read -p "Generate coldkey? (y/n): " answer
 if [[ $answer == "y" ]]; then
     btcli w new_coldkey
+
+else
+echo "User declined the step. Exiting the script."
+exit 1
+
+fi
+
+# Generate miner coldkey wallet (coldkey)
+read -p "Generate hotkey? (y/n): " answer
+if [[ $answer == "y" ]]; then
     btcli w new_hotkey
 
 else
