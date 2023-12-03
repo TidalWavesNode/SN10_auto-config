@@ -86,9 +86,9 @@ exit 1
 
 fi
 
-read -p "Has the wallet been funded with TAO? (y/n): " answer
-if [[ $answer != "n" ]]; then
-    echo "Please fund your wallet before proceeding."
+read -p "Before proceeding ensure the wallet been funded with TAO? (y/n): " answer
+if [[ $answer != "y" ]]; then
+    echo "Time to attempt to register your hotkey"
     exit 1
 fi
 
