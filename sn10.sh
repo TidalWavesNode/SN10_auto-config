@@ -96,6 +96,7 @@ fi
 # Start Miner with default parameters
 read -p "Start Mining Subnet 10 with default parameters? (y/n): " answer
 if [[ $answer == "y" ]]; then
+    cd ~/map-reduce-subnet/neurons || exit
     pm2 start miner.py --name SN10MINER --interpreter python3 -- --netuid 10 --subtensor.network finney --wallet.name default --wallet.hotkey default --logging.debug --auto_update patch
 
 else
