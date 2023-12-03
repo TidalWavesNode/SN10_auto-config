@@ -28,7 +28,9 @@ RAM: 10GB
 Recommended hardware requirement:
 
 Network bandwidth: 10Gbps
+
 RAM: 32GB
+
 Note: Higher network bandwidth and RAM can lead to more rewards.
 
 
