@@ -5,6 +5,19 @@
 echo "Starting SN10 setup script..."
 
 # Installation (System update, upgrade, and installation of pm2)
+read -p "This script will setup and run a miner on Bittensor ubnet 10 Map-Reduce-Subnet. Continue? (y/n): " answer
+# Convert the answer to lowercase
+answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
+
+# Check if the answer is 'no'
+if [[ $answer == "n" || $answer == "no" ]]; then
+    echo "Exiting the script."
+    exit 0
+fi
+
+# If the answer is not 'no', the script will continue
+echo "Lets get started..."
+
 read -p "Update, upgrade system, and install pm2? (y/n): " answer
 if [[ $answer == "y" ]]; then
     sudo apt update && sudo apt upgrade -y
