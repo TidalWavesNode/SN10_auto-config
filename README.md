@@ -11,5 +11,9 @@ bash sn10.sh
 ```
 ***
 
+## Notes
+It is recommended for the purposes of this script to leave the generated wallet names as "default".
+Always back up your private keys in a safe and secure location!
+
 
 
