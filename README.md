@@ -20,8 +20,11 @@ Always back up your private keys in a safe and secure location!
 For running a miner, you need enough resources. The minimal requirements for running a miner are
 
 Public IP address
+
 Network bandwidth: 1Gbps
+
 RAM: 10GB
+
 Recommended hardware requirement:
 
 Network bandwidth: 10Gbps
