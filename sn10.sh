@@ -31,21 +31,6 @@ exit 1
 
 fi
 
-# Build rust binary
-read -p "Build rust binary? (y/n): " answer
-if [[ $answer == "y" ]]; then
-    cd ~/map-reduce-subnet/neurons || exit
-    sudo apt install rustc -y
-    sudo apt install cargo -y
-    sudo apt-get install libsqlite3-dev -y
-    cargo build --release
-
-else
-echo "User declined the step. Exiting the script."
-exit 1
-
-fi
-
 # Generate miner coldkey wallet (coldkey)
 read -p "Generate coldkey? (y/n): " answer
 if [[ $answer == "y" ]]; then
@@ -119,7 +104,13 @@ exit 1
 
 fi
 
-echo "SN10 setup script completed."
-
 # Monitor the PM2 processes
-pm2 monit
+read -p "Start pm2 monit dashboard? (y/n): " answer
+if [[ $answer == "y" ]]; then
+    pm2 monit
+    
+else
+echo "User declined the step. Exiting the script."
+exit 1
+
+fi
