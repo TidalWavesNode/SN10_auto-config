@@ -16,5 +16,17 @@ bash sn10.sh
 It is recommended for the purposes of this script to leave the generated wallet names as "default".
 Always back up your private keys in a safe and secure location!
 
+##Prerequisites
+For running a miner, you need enough resources. The minimal requirements for running a miner are
+
+Public IP address
+Network bandwidth: 1Gbps
+RAM: 10GB
+Recommended hardware requirement:
+
+Network bandwidth: 10Gbps
+RAM: 32GB
+Note: Higher network bandwidth and RAM can lead to more rewards.
+
 
 
